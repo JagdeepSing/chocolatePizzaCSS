@@ -1,0 +1,199 @@
+body {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/* Hash Diagonal Lines Divider */
+.divider {
+    height: 15px;
+    background: repeating-linear-gradient(55deg,
+        rgb(201, 201, 201),
+        rgb(255, 255, 255) 3px);
+    margin: 35px 0;
+}
+
+/* Gray Text */
+.faded {
+    opacity: 0.4;
+}
+
+/* Header */
+
+header {
+    margin: 25px auto;
+}
+
+#logo img {
+    height: 60px;
+    margin: 8px 10px 0 0;
+}
+
+.companyName h1, .companyName h6 {
+    margin: 0;
+}
+
+.companyName h1 {
+    font-size: 40px;
+    font-family: 'Yellowtail', cursive;
+    font-weight: 100;
+}
+
+.companyName h6 {
+    font-size: 7pt;
+}
+
+#socials {
+    margin-top: 10px;
+}
+
+#socials li {
+    display: inline;
+}
+
+#rss {
+    margin-left: 10px;
+}
+
+/* Recipe Title */
+
+.recipeName {
+    margin: 0;
+    font-size: 45px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#date h6 {
+    margin: 5px 0 20px 0;
+}
+
+#print img {
+    margin-right: 5px;
+}
+
+
+.recipeImage img {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.recipeIngredients {
+    padding: 20px 30px;
+    background-image: url(../assets/list-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#list {
+    width: 400px;
+}
+
+#list ul {
+    list-style: none;
+}
+
+#list li {
+    /* spacing between the ingredients */
+    margin-top: 7px;
+    font-size: 19px;
+    font-family: 'Delius', sans-serif;
+    color: #4b4b4b;
+}
+
+.crossedOut {
+   text-decoration: line-through;
+}
+
+.recipeDirections p {
+    text-indent: 30px;
+    color: gray;
+}
+
+/* Author Section */
+
+.authorInfo {
+    margin: 0 15px;
+    width: 570px;
+}
+
+.authorInfo h2 {
+    margin: 0;
+}
+
+.authorInfo p {
+    margin: 10px 0;
+}
+
+.shareBtn button {
+    background-color: #d8603c;
+    color: white;
+    font-size: 19px;
+    margin-top: 10px;
+    width: 200px;
+    height: 65px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    margin: 80px auto;
+}
+
+footer img {
+    width: 30px;
+}
+
+.footerDivider {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+.footerDivider:before, .footerDivider:after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    margin-left: -999em;
+    height: 2px;
+    width: 998em;
+    border-top: 1px solid black;
+}
+
+.footerDivider:after {
+    left: auto;
+    width: 999em;
+    margin: 0 0 0 1em;
+}
+
+/**** Refactored Code ****/
+
+/*** Positioning ***/
+
+/* Overflow Hidden */
+header, #datePrint, .footerDivider, .recipeAuthor, .recipeIngredients {
+    overflow: hidden;
+}
+
+/* Float Left */
+#logo, .companyName, #date h6, .authorImg, .authorInfo, #list {
+    float: left;
+}
+/* Float Right */
+#print, #socials, .shareBtn {
+    float: right;
+}
+
+/*** Font ***/
+
+.companyName h6, #date h6, #print {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#date h6, #print {
+    font-size: 10.5pt;
+}
+
+.recipeDirections p, .authorInfo p {
+    font-size: 14.5pt;
+} 
